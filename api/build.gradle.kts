@@ -6,7 +6,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.fis.baseservice.api.BaseServiceApplication")
+    mainClass.set("com.fis.spring_boot_base_service.api.SpringBootBaseServiceApplication")
 }
 
 dependencies {
@@ -14,7 +14,8 @@ dependencies {
     api(project(":core"))
 
     implementation(libs.spring.boot.starter.webmvc)
-//    implementation(libs.spring.boot.starter.security)
+    implementation(libs.spring.boot.starter.data.jpa)
+    implementation(libs.spring.boot.starter.security)
     implementation(libs.spring.boot.starter.validation)
     implementation(libs.spring.boot.starter.actuator)
 
