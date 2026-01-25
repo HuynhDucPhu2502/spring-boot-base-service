@@ -1,4 +1,4 @@
-package com.fis.spring_boot_base_service.api;
+package com.fis.spring_boot_base_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
