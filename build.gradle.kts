@@ -54,6 +54,8 @@ subprojects {
         implementation(rootProject.libs.spring.boot.starter.log4j2)
         testImplementation(rootProject.libs.spring.boot.starter.test)
 
+        // Utils
+        implementation("cn.hutool:hutool-all:5.8.43")
 
         // MapStruct
         implementation("org.mapstruct:mapstruct:1.6.3")
