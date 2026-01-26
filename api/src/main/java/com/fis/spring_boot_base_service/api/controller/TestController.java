@@ -1,6 +1,6 @@
 package com.fis.spring_boot_base_service.api.controller;
 
-import com.fis.spring_boot_base_service.core.TestService;
+import com.fis.spring_boot_base_service.core.service.TestService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

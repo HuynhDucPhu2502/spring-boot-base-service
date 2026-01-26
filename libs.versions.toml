@@ -23,6 +23,7 @@ spring-boot-configuration-processor = { group = "org.springframework.boot", name
 spring-boot-starter-webmvc-test = { group = "org.springframework.boot", name = "spring-boot-starter-webmvc-test", version.ref = "springBoot" }
 spring-security-test = { group = "org.springframework.security", name = "spring-security-test", version.ref = "springBoot" }
 spring-boot-starter-log4j2 = { group = "org.springframework.boot", name = "spring-boot-starter-log4j2", version.ref = "springBoot" }
+spring-boot-starter-liquibase = { group = "org.springframework.boot", name = "spring-boot-starter-liquibase", version.ref = "springBoot" }
 postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql" }
 jjwt-api = { group = "io.jsonwebtoken", name = "jjwt-api", version.ref = "jjwt" }
 jjwt-impl = { group = "io.jsonwebtoken", name = "jjwt-impl", version.ref = "jjwt" }

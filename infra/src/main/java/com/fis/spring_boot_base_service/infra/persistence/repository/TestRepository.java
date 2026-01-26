@@ -1,4 +1,4 @@
-package com.fis.spring_boot_base_service.infra;
+package com.fis.spring_boot_base_service.infra.persistence.repository;
 
 import org.springframework.stereotype.Component;
 

@@ -1,7 +1,7 @@
-package com.fis.spring_boot_base_service.core;
+package com.fis.spring_boot_base_service.core.service;
 
 import com.fis.spring_boot_base_service.common.StringFormatter;
-import com.fis.spring_boot_base_service.infra.TestRepository;
+import com.fis.spring_boot_base_service.infra.persistence.repository.TestRepository;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;

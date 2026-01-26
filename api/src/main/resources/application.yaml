@@ -2,7 +2,7 @@ spring:
   application:
     name: base-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/novabank-card-service
+    url: jdbc:postgresql://localhost:5432/test-db
     username: postgres
     password: root
     driver-class-name: org.postgresql.Driver
@@ -13,3 +13,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/db.changelog-master.yaml
