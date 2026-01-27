@@ -5,6 +5,7 @@ plugins {
 dependencies {
 
     api(project(":common"))
+    api(project(":core"))
 
     implementation(libs.spring.boot.starter.data.jpa)
     implementation(libs.spring.boot.starter.kafka)

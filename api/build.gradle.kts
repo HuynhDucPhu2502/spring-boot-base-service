@@ -12,6 +12,8 @@ application {
 dependencies {
 
     api(project(":core"))
+    api(project(":infra"))
+    api(project(":common"))
 
     implementation(libs.spring.boot.starter.webmvc)
     implementation(libs.spring.boot.starter.data.jpa)
@@ -20,11 +22,6 @@ dependencies {
     implementation(libs.spring.boot.starter.actuator)
 
     implementation(libs.openapi.doc)
-
-
-    implementation(libs.jjwt.api)
-    runtimeOnly(libs.jjwt.impl)
-    runtimeOnly(libs.jjwt.jackson)
 
     annotationProcessor(libs.spring.boot.configuration.processor)
 
