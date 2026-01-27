@@ -1,11 +1,9 @@
 package com.fis.spring_boot_base_service.api.controller;
 
-import com.fis.spring_boot_base_service.core.service.TestService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /** Admin 1/24/2026 */
@@ -14,10 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class TestController {
 
-  TestService testService;
-
-  @GetMapping("/test")
-  public String test(@RequestParam("name") String name) {
-    return testService.processRequest(name);
+  @GetMapping("/greetings")
+  public String test() {
+    return "Hello World";
   }
 }
