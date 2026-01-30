@@ -7,9 +7,11 @@ dependencies {
     api(project(":common"))
     api(project(":core"))
 
+    implementation(libs.spring.boot.starter.webmvc)
     implementation(libs.spring.boot.starter.data.jpa)
     implementation(libs.spring.boot.starter.kafka)
     implementation(libs.spring.boot.starter.liquibase)
+    implementation(libs.aws.s3)
 
     runtimeOnly(libs.postgresql)
 
