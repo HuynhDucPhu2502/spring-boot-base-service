@@ -112,6 +112,11 @@ server:
   port: 8080
 
 spring:
+  jmx:
+    enabled: false
+  threads:
+    virtual:
+      enabled: true
   profiles:
     active: default
 ```

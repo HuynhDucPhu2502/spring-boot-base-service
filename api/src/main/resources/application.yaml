@@ -1,6 +1,13 @@
 spring:
   application:
     name: base-service
+  jmx:
+    enabled: false
+  threads:
+    virtual:
+      enabled: true
+  main:
+    keep-alive: true
   datasource:
     url: jdbc:postgresql://localhost:5432/test-db
     username: postgres
@@ -16,6 +23,12 @@ spring:
   liquibase:
     enabled: false
     change-log: classpath:/db/changelog/db.changelog-master.yaml
+
+management:
+  endpoints:
+    jmx:
+      exposure:
+        exclude: "*"
 
 snowflake:
   worker-id: 10
