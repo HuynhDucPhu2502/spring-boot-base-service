@@ -1,6 +1,5 @@
 rootProject.name = "spring-boot-base-service"
 
-include("common")
 include("api")
 include("core")
 include("infra")

@@ -4,7 +4,6 @@ plugins {
 
 dependencies {
 
-    api(project(":common"))
     api(project(":core"))
 
     implementation(libs.spring.boot.starter.webmvc)
