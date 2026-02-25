@@ -11,11 +11,10 @@ application {
 
 dependencies {
 
-    api(project(":core"))
-    api(project(":infra"))
+    implementation(project(":core"))
+    runtimeOnly(project(":infra"))
 
     implementation(libs.spring.boot.starter.webmvc)
-    implementation(libs.spring.boot.starter.data.jpa)
     implementation(libs.spring.boot.starter.security)
     implementation(libs.spring.boot.starter.validation)
     implementation(libs.spring.boot.starter.actuator)
@@ -30,5 +29,5 @@ dependencies {
 }
 
 jib {
-    to.image = "huynhducphu2502/spring-boot-base-service"
+    to.image = "your-org/spring-boot-base-service"
 }

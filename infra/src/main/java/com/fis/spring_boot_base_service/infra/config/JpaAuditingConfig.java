@@ -1,16 +1,18 @@
-package com.fis.spring_boot_base_service.api.config;
+package com.fis.spring_boot_base_service.infra.config;
 
 import java.util.Optional;
 import org.jspecify.annotations.NonNull;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 
 /** Admin 1/25/2026 */
 @Configuration(proxyBeanMethods = false)
+@EnableJpaAuditing(auditorAwareRef = "auditorAware")
 public class JpaAuditingConfig {
 
   @Bean
