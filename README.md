@@ -16,8 +16,19 @@ Base service theo kiến trúc multi-module, hướng đến Clean Architecture:
 
 ## Giới thiệu
 - Dự án dùng Spring Boot và cấu trúc multi-module để chia nhỏ trách nhiệm.
-- Phù hợp làm template cho service mới: sẵn cấu hình logging, validation, security, JPA, Liquibase, OpenAPI.
-- Dễ mở rộng thêm adapter (Kafka, S3, v.v.) trong module `infra`.
+- Phù hợp làm template cho service mới với các tích hợp sẵn có trong repo.
+- Dễ mở rộng thêm adapter trong module `infra`.
+
+## Tính năng và tích hợp sẵn có
+- Spring Web MVC (REST API)
+- Spring Security
+- Validation (Bean Validation)
+- JPA + Hibernate
+- Liquibase migration
+- OpenAPI (SpringDoc)
+- Kafka (spring-kafka)
+- AWS S3 SDK
+- Snowflake ID generator (Hutool)
 
 ## Kiến trúc module
 - `api`: REST API, security, cấu hình chạy ứng dụng.
