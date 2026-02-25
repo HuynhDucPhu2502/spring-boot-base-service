@@ -5,6 +5,7 @@ Base service theo kiến trúc multi-module, hướng đến Clean Architecture:
 ## Mục lục
 - [Giới thiệu](#giới-thiệu)
 - [Kiến trúc module](#kiến-trúc-module)
+- [INSTRUCTION.md](#instructionmd)
 - [Yêu cầu cài đặt](#yêu-cầu-cài-đặt)
 - [Cài đặt và cấu hình DB](#cài-đặt-và-cấu-hình-db)
 - [Build dự án](#build-dự-án)
@@ -22,6 +23,9 @@ Base service theo kiến trúc multi-module, hướng đến Clean Architecture:
 - `api`: REST API, security, cấu hình chạy ứng dụng.
 - `core`: domain + use-case thuần, không phụ thuộc framework.
 - `infra`: hạ tầng (JPA, Liquibase, Kafka, S3, v.v.), implement các adapter.
+
+## INSTRUCTION.md
+Tài liệu dành cho AI để tích hợp, chỉnh sửa hoặc mở rộng dự án: `INSTRUCTION.md`.
 
 ## Yêu cầu cài đặt
 - JDK 25 (hoặc đúng version bạn đang dùng cho dự án).
